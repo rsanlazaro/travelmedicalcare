@@ -6,14 +6,15 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- Primary Meta Tags -->
-  <title>title</title>
-  <meta name="title" content="title">
+  <title>Travel Medical Care</title>
+  <meta name="title" content="Travel Medical Care">
   <meta name="description" content="title">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Font Awesome -->
   <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
   <!-- Google icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -54,7 +55,8 @@
           <div class="header-info-text spanish display-block">
             <p>Follow us</p>
             <p class="social-icons">
-              <i class="material-icons">&#xf39e;</i>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>
             </p>
           </div>
         </div>
@@ -73,26 +75,51 @@
             <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Nosotros</a>
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="servicios.html">Servicios</a>
           </li>
         </ul>
-        <div class="language">
-          <select name="language" id="language">
-            <option value="spanish">ESP</option>
-            <option value="english">EN</option>
-          </select>
+
+        <div class="language language-picker-container">
+          <!-- <div class="language-picker js-language-picker get-quote" -->
+          <!-- data-trigger-class="li4-btn-custom li4-btn-custom--subtle js-tab-focus"> -->
+          <form action="" class="language-picker__form">
+            <select name="language-picker-select" id="language-picker-select" onchange="val()">
+              <option class="burger-option" lang="es" value="spanish" selected>ESP</option>
+              <option class="burger-option" lang="en" value="english">ENG</option>
+            </select>
+          </form>
+          <!-- </div> -->
         </div>
       </div>
     </nav>
   </header>
 
-  <section class="grid-section spanish display-block">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="build/img/carrousel/slide-1.webp" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="build/img/carrousel/slide-2.webp" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="build/img/carrousel/slide-3.webp" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <section class="flex-column-row spanish display-block">
     <div>
       <h2>Equipos especializados <span>la mejor salud privada</span></h2>
       <p>Alianzas en +20 países buscando la mejor salud privada, entre empresas privadas y hospitales, clínicas,
@@ -111,34 +138,287 @@
     </div>
   </section>
 
+  <section class="grid-section">
+    <div class="section-title">
+      <h2>Los mejores tratamientos</h2>
+      <p>Contamos con los mejores colaboradores entre empresas privadas y hospitales, clínicas y laboratorios, que en
+        conjunto podemos ofrecer la mejor opción de tratamientos:</p>
+    </div>
+    <div class="grid-1-2-3">
+      <div class="grid-element">
+        <img src="build/img/treatments/medical-companion.webp" alt="medical companion">
+        <h3>Acompañamiento médico</h3>
+      </div>
+      <div class="grid-element">
+        <img src="build/img/treatments/assisted-reproduction.webp" alt="assisted reproduction">
+        <h3>Reproducción asistida humana</h3>
+      </div>
+      <div class="grid-element">
+        <img src="build/img/treatments/estetic-surgery.webp" alt="estetic surgery">
+        <h3>Cirugía estética o especializada</h3>
+      </div>
+      <div class="grid-element">
+        <img src="build/img/treatments/specialized-treatments.webp" alt="specialized treatments">
+        <h3>Tratamientos especializados</h3>
+      </div>
+      <div class="grid-element">
+        <img src="build/img/treatments/surgery-room.webp" alt="surgical rooms">
+        <h3>Y mucho más...</h3>
+      </div>
+      <div class="grid-element">
+        <img src="build/img/treatments/medical-logo.webp" alt="medical services">
+        <h3>Acompañamiento médico</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="description-text">
+    <h2>¿Por qué necesitar un viaje para tratarse?</h2>
+    <p><span>Travel medical care</span> reúne las mejores condiciones para convertirse en una potencia internacional del
+      turismo de salud, ya que dispone de las mejores colaboraciones de prestigio internacional. A día de hoy el turismo
+      de bien-estar está en crecimiento ya que la innovación y la seguridad de los servicios prestados en otros países
+      son los elementos que definen la decisión de buscar un tratamiento alternativo, o una mejor atención.</p>
+    <p>El sector sanitario privado ha ido creciendo en muchos lugares con innovación, vanguardia y diferenciales
+      culturales y legales. Los últimos años fruto de las diversas ventajas y beneficios que ofrece a sus usuarios, como
+      reducción de la lista de espera para determinadas especialidades la calidad , el trato e instalaciones (bajo la
+      idea de confort), así como el acceso a determinados tratamientos no cubiertos por la sanidad pública.</p>
+    <p>Por supuesto cada destino tiende a ofrecer planeamientos muy distintos, sin embargo cabe al paciente la decisión
+      final de su elección, que puede variar entre: tratamientos innovadores, tranquilidad, aislamiento y discreción,
+      tranquilidad emocional, o técnicas solamente permitidas en el país de destino.</p>
+  </section>
+
   <section class="counter-section">
+    <div class="counter-title">
+      <h2>Beneficios de tratarse en el exterior</h2>
+      <p>Con travel medical care tendrás la fluidez de información médica, tanto en los datos previos para orientar al
+        paciente antes, durante y después del tratamiento, con el fin de asegurar una adecuada recuperación.</p>
+    </div>
     <div class="wrapper">
       <div class="container">
-        <i class="fas fa-utensils"></i>
+        <div></div>
         <span class="num" data-val="36">0</span>
         <span class="text">Ciudades</span>
       </div>
       <div class="container">
-        <i class="fas fa-smile-beam"></i>
+        <div></div>
         <span class="num" data-val="150">0</span>
         <span class="text">Testimonios</span>
       </div>
       <div class="container">
-        <i class="fas fa-list"></i>
+        <div></div>
         <span class="num" data-val="207">0</span>
         <span class="text">Clientes felices</span>
       </div>
       <div class="container">
-        <i class="fas fa-star"></i>
+        <div></div>
         <span class="num" data-val="340">0</span>
         <span class="text">Estrellas</span>
       </div>
     </div>
   </section>
 
+  <section class="compromise">
+    <h2>Nuestro compromiso</h2>
+    <div class="bullet-list">
+      <div class="bullet-element div1">
+        <h3>Especialidades médicas</h3>
+        <ul>
+          <li>Reproducción asistida</li>
+          <li>Cardiología</li>
+          <li>Urología</li>
+          <li>Oftalmología</li>
+          <li>Oncología</li>
+          <li>Traumatología</li>
+          <li>Odonotología</li>
+        </ul>
+      </div>
+      <div class="bullet-element div2">
+        <h3>Tratamientos especializados</h3>
+        <ul>
+          <li>Reproducción asistida</li>
+          <li>Cardiología</li>
+          <li>Urología</li>
+          <li>Oftalmología</li>
+          <li>Oncología</li>
+          <li>Traumatología</li>
+          <li>Odonotología</li>
+        </ul>
+      </div>
+      <div class="bullet-element div3">
+        <h3>Belleza y bienestar</h3>
+        <ul>
+          <li>Reproducción asistida</li>
+          <li>Cardiología</li>
+          <li>Urología</li>
+          <li>Oftalmología</li>
+          <li>Oncología</li>
+          <li>Traumatología</li>
+          <li>Odonotología</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-body">
+    <div class="contact-form">
+      <h2 class="contact-form-title">Contáctanos</h2>
+      <form action="https://formsubmit.co/016701734b4b0198a374d9e0f9e09ed4" method="POST"
+        class="row g-3 needs-validation" novalidate>
+        <div class="col-md-12">
+          <label for="Nombre">Nombre</label>
+          <input type="text" class="form-control" id="validationCustom01" name="Nombre" required />
+          <div class="invalid-feedback">
+            <div>Ingrese un nombre</div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="has-validation">
+            <label for="Correo">Correo electrónico</label>
+            <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+              name="Correo" required />
+            <div class="invalid-feedback">
+              <div>Ingrese un correo válido</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <label for="Asunto">Asunto</label>
+          <input type="text" class="form-control" id="validationCustom01" name="Asunto" required />
+          <div class="invalid-feedback">
+            <div>Ingrese el asunto</div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <label for="Mensaje">Mensaje</label>
+          <textarea rows="5" class="form-control" id="validationCustom03" name="Mensaje"></textarea>
+          <div class="invalid-feedback">
+            <div></div>
+          </div>
+        </div>
+        <div class="check-form">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+            <label class="form-check-label" for="invalidCheck">
+              <a data-toggle="modal" data-target="#exampleModal">
+                <p class="aviso">Acepto el aviso de privacidad</p>
+              </a>
+            </label>
+            <div class="invalid-feedback">
+              <p class="aviso">Debe aceptar el aviso de privacidad</p>
+            </div>
+          </div>
+        </div>
+        <input type="hidden" name="_cc" value="recepcion@saludconcept.mx">
+        <input type="hidden" name="_subject" value="Solicitud de informes" />
+        <button class="btn-send" type="submit">Agendar</button>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">
+            Aviso de privacidad
+          </h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Salud and Concept, con domicilio para efectos del
+            tratamiento de datos personales que efectúa dentro
+            del territorio de los Estados Unidos Mexicanos, el
+            ubicado en las calles de Concepción Beistegui 720,
+            Col del Valle Centro, Benito Juárez, 03100, en la
+            Ciudad de México, es responsable del tratamiento de
+            sus datos personales, mismos que serán utilizados
+            para la prestación de nuestros servicios de
+            intermediación en gestación subrogada, incluyendo
+            los servicios médico-hospitalarios, hospitalización,
+            cirugía, farmacéuticos, análisis de laboratorio,
+            radiología e imagen, estudios y análisis
+            patológicos, terapia, rehabilitación, dieta,
+            nutrición, trabajo social, atención médica y
+            psicológica, inherentes a dicha actividad
+            profesional, así como para los distintos fines
+            establecidos en nuestro aviso de privacidad
+            integral.
+          </p>
+          <br />
+          <p>
+            Los Datos podrían ser transferidos, dentro y fuera
+            del país, a terceros relacionados o subcontratados
+            para los servicios a nuestro cargo, para los mismos
+            fines previstos en nuestro aviso de privacidad
+            integral.
+          </p>
+          <br />
+          <p>
+            Si Usted no manifiesta su oposición para que los
+            datos personales sean transferidos, se entenderá que
+            otorga su consentimiento para ello.
+          </p>
+          <br />
+          <p>
+            Para revocar su consentimiento, ponemos a su
+            disposición el correo electrónico
+            recepcion@saludconcept.mx, indicando en el asunto
+            del mensaje, la leyenda: “Revocación de
+            consentimiento de datos personales”, debiendo
+            proporcionar la información solicitada en nuestro
+            aviso de privacidad integral.
+          </p>
+          <br />
+          <p>
+            Para el ejercicio de sus derechos ARCO ponemos a su
+            disposición el correo electrónico
+            recepcion@saludconcept.mx, indicando en el asunto
+            la leyenda: “Solicitud de ejercicio de derechos
+            ARCO”, debiendo proporcionar la información
+            solicitada en nuestro aviso de privacidad integral.
+          </p>
+          <br />
+          <p>
+            <i>Última actualización de este aviso de privacidad:
+              15/01/2022</i>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer>
-    <p>Todos los derechos reservados</p>
+    <div class="footer-info">
+      <img src="build/img/general/travel-logo.webp" alt="travel medical care logo">
+      <div>
+        <i class="material-icons">&#xe325;</i>
+        <div>
+          <p class="info-1">+34608427798</p>
+          <p class="info-2">info@travelmedicalcare.com</p>
+        </div>
+      </div>
+      <div>
+        <i class="material-icons">&#xe0c8;</i>
+        <div>
+          <p class="info-1">1111 Sixth Ave</p>
+          <p class="info-2">San Diego, CA 92101. EE. UU.</p>
+        </div>
+      </div>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!4v1713157863161!6m8!1m7!1sQppjN2tN7KXfJxNeFEjInA!2m2!1d20.72993394556545!2d-103.4309357449437!3f353.0268123336733!4f-2.742544511843562!5f0.7820865974627469"
+      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </footer>
+
   <!-- Custom JS -->
   <script src="build/js/bundle.min.js"></script>
   <!-- Bootstrap JS -->

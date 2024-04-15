@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="build/img/Logos/logo.webp">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Primary Meta Tags -->
+  <title>Travel Medical Care</title>
+  <meta name="title" content="Travel Medical Care">
+  <meta name="description" content="title">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font Awesome -->
+  <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+  <!-- Google icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Style -->
+  <link rel="stylesheet" href="build/css/app.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-info">
+      <div class="header-logo">
+        <img src="build/img/general/travel-logo.webp" alt="travel-medical-care">
+      </div>
+      <div class="header-links">
+        <div class="schedule">
+          <i class="material-icons">&#xe192;</i>
+          <div class="header-info-text spanish display-block">
+            <p>Lun-Sab 9:00 - 20:00</p>
+            <p>Domingos - Cerrado</p>
+          </div>
+        </div>
+        <div class="phone">
+          <i class="material-icons">&#xe325;</i>
+          <div class="header-info-text spanish display-block">
+            <p>+34608427798</p>
+            <p>info@travelmedicalcare.com</p>
+          </div>
+        </div>
+        <div class="location">
+          <i class="material-icons">&#xe0c8;</i>
+          <div class="header-info-text spanish display-block">
+            <p>1111 Sixth Ave</p>
+            <p>San Diego, CA 92101, EE.UU.</p>
+          </div>
+        </div>
+        <div class="social">
+          <i class="material-icons">&#xe7fc;</i>
+          <div class="header-info-text spanish display-block">
+            <p>Follow us</p>
+            <p class="social-icons">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html"><img src="build/img/general/travel-logo.webp" alt="travel-logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+        </ul>
+
+        <div class="language language-picker-container">
+          <form action="" class="language-picker__form">
+            <select name="language-picker-select" id="language-picker-select" onchange="val()">
+              <option class="burger-option" lang="es" value="spanish" selected>ESP</option>
+              <option class="burger-option" lang="en" value="english">ENG</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section-header">
+    <h2>Servicios</h2>
+    <div>
+      <a href="index.html">Travel medical care </a>> Servicios
+    </div>
+  </section>
+
+  <section class="normal-text">
+    <p>Cada paciente tienen sus prioridades y necesidades, diseñamos de manera personalizada cada plan de tratamiento y viaje. todos nuestros centros y colaboradores están siempre en común acuerdo con nuestro equipo, a fin de atender cada solicitud de manera individual.</p>
+  </section>
+
+  <section class="service-description">
+    <h2>Especialidades médicas</h2>
+    <div class="service-text">
+      <ul>
+        <li>Reproducción asistida</li>
+        <li>Cardiología</li>
+        <li>Urología</li>
+        <li>Oftalmología</li>
+        <li>Oncología</li>
+        <li>Traumatología</li>
+        <li>Odonotología</li>
+      </ul>
+      <div class="service-text-description">
+        <h3>Las más solicitadas</h3>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Reproducción asistida
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Sin duda, uno de los tratamientos más buscado y realizado por nosotros en Travel Medical Care, la
+                  reproducción asistida es pionera en muchos países, llegando a ser más asequible y garantizada en
+                  muchos
+                  lugares, con técnicas innovadoras y sin el stress que siempre conlleva a las familias que buscan la
+                  Programación Familiar.</p>
+                <p>Nuestro equipo esta familiarizado con prácticamente todos los temas y perfiles de pacientes, aquí
+                  vamos
+                  mano a mano al país de destino, en los mejores laboratorios de fertilidad con los pacientes, contamos
+                  con
+                  el soporte de muchos bancos de material genético (masculino y femenino) y bases de datos de embriones
+                  en
+                  caso de necesidad, para que toda la experiencia nos aporte los mejores resultados.</p>
+                <p>Acompañamos a todas las personas en si derecho de formar una familia, independiente de su estado
+                  civil,
+                  edad u condición sexual.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Oncología
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Seriedad, especialidad y propuestas innovadoras de vanguardia para los tratamientos Oncológicos, lo
+                  primordial es la comodidad y satisfacción del paciente par estar en las mejores manos, en uno de los
+                  momentos más complicados del estado de salud. Estaremos 24horas en contacto con el paciente donde se
+                  está
+                  tratando, buscaremos hoteles, ciudades y atendernos a todas las necesidades incluso en apoyo
+                  domiciliario,
+                  equipamiento en cualquier lugar donde se esta recibiendo el tratamiento.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-description">
+    <h2>Tratamientos especializados</h2>
+    <div class="service-text">
+      <ul>
+        <li>Tratamientos infertilidad</li>
+        <li>Cirugía plásatica y estética</li>
+        <li>Odonotología</li>
+        <li>Cirugía para la obesidad</li>
+        <li>Terapia de patrones</li>
+        <li>Tratamiento de género</li>
+      </ul>
+      <div class="service-text-description">
+        <h3>Las más solicitadas</h3>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Cirugía plástica, estética y capilar
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>En la búsqueda de la satisfacción personal, no hay límites podemos ofrecer propuestas por todo el
+                  mundo,
+                  desde presupuestos muy asequibles hasta lo más exclusivos y osados… El paciente es el que manda en los
+                  casos de la estética. Ayudamos con todo lo necesario para la recuperación de nuestros pacientes, los
+                  mejores destinos, tranquilidad y bienestar, hasta una isla paradisiaca para relajar, esperar y verse
+                  bello.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Tratamiento de genérico
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Responsabilidad en entender y comprender la historia de cada paciente, gestión del soporte
+                  psicológico
+                  familiar y personal del paciente en todo momento, alojamiento, atención las 24 horas, traslados
+                  durante
+                  el
+                  proceso y la recuperación. Médicos premiados y especializados en cambio de sexo, publico LGTB,
+                  personas
+                  transgénero. Terapia ocupacional y compromiso a la reintegración en sociedad.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-description last-service">
+    <h2>Belleza y bienestar</h2>
+    <div class="service-text">
+      <ul>
+        <li>Rehabilitación</li>
+        <li>Anti-age</li>
+        <li>Estética</li>
+        <li>Nutrición</li>
+        <li>Terapia naturales</li>
+        <li>Bienestar</li>
+        <li>Termalismos</li>
+        <li>Terapias alternativas</li>
+      </ul>
+      <div class="service-text-description">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <div class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <p>Desde luego el equipo de Travel Medical Care esta más que preparado para realizar todos tus objetivos
+                  en cualquier parte, siempre estamos dispuestos a escuchar las dudas y miedos de cada paciente que son
+                  nuestra prioridad, pues se transforman en las necesidades, y nuestros asesores estarán atentos para
+                  realizar un buen presupuesto de viaje y tratamiento, con el único fin que todo sea cumplido, y que
+                  nuestras acciones sean un éxito compartido.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-info">
+      <img src="build/img/general/travel-logo.webp" alt="travel medical care logo">
+      <div>
+        <i class="material-icons">&#xe325;</i>
+        <div>
+          <p class="info-1">+34608427798</p>
+          <p class="info-2">info@travelmedicalcare.com</p>
+        </div>
+      </div>
+      <div>
+        <i class="material-icons">&#xe0c8;</i>
+        <div>
+          <p class="info-1">1111 Sixth Ave</p>
+          <p class="info-2">San Diego, CA 92101. EE. UU.</p>
+        </div>
+      </div>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!4v1713157863161!6m8!1m7!1sQppjN2tN7KXfJxNeFEjInA!2m2!1d20.72993394556545!2d-103.4309357449437!3f353.0268123336733!4f-2.742544511843562!5f0.7820865974627469"
+      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </footer>
+
+  <!-- Custom JS -->
+  <script src="build/js/bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
